@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+body {
+    text-align: center;
+    background-color: #303030;
+}
+
+.container {
+    margin: auto;
+    width: 800px;
+    height: auto;
+    background-color: white;
+    object-fit: scale-down;
+    border: 5px solid white;
+}
+
+.behind {
+    width: 800px;
+    height: 450px;
+    background-color: black;
+}
+
+.jumbo {
+    width: 800px;
+    height: auto;
+}
+
+.thumb {
+    border: 3px solid brown;
+    box-sizing: border-box;
+    float: left;
+    width: 266px;
+    height: 150px;
+    transition: 0.3s;
+}
+
+.thumb:hover {
+    filter: brightness(0.6);
+    cursor: pointer;
+}
+
+.clear {
+    clear: left;
+}
+
+.active {
+    filter: brightness(0.6);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.animate {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
